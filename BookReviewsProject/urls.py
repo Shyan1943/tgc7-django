@@ -23,6 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('books/', books.views.index),
     path('books/all', books.views.show_books),
+    path('books/authors/', books.views.show_authors),
+    path('books/create', books.views.create_book),
     path('reviews/', reviews.views.index),
     path('forum/', forum.views.forum_home)
 ]
